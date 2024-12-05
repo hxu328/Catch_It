@@ -521,6 +521,7 @@ class PPO_Track(object):
             #     'metrics/episode_test_rewards': mean_rewards,
             #     'metrics/episode_test_lengths': mean_lengths,
             # }, step=self.agent_steps)
+            # print('self test steps:', self.max_test_steps)
 
     def adjust_learning_rate_cos(self, epoch):
         lr = self.init_lr * 0.5 * (
